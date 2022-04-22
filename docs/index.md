@@ -6,15 +6,17 @@ Kursmaterial TP Processing (p5js) Sommersemester 2022
 You can use the [editor on GitHub](https://github.com/einraum-design/tp_processing_SoSe2022/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
 
-### Themen
-25.03.2022 – Einfache Formen und Farben
+## 25.03.2022 – Einfache Formen und Farben
 - [TP 1A](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_A/index.html)
 - [TP 1B](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_B/index.html)
 
-###Kommentare  
+### Kommentare  
 werden vom Compiler ignoriert:
+```
 // one line comment
+```
 
+``` 
 /* block comment 
  long 
  comment 
@@ -26,9 +28,10 @@ ignore
 a longer
 part of 
 the application */
+```
 
 
-###Sketchgröße
+### Sketchgröße
 
 Die Fenstergröße einer Anwendung mit der createCanvas() Funktion definiert.
 Der erste Parameter ist die Skechtbreite, der zweite die Höhe. Alle Größen- und Positionsangaben sind Pixelmaße.
@@ -41,7 +44,7 @@ zB. Wenn der Sketch ein PDF erstellt, eine 3D Szene gezeigt oder ein performante
 
 
 
-###Shapes
+### Shapes
 
 Die Rechtecks Funktion kann mit 
 - 4 Parametern: xPosition, yPosition, width, height
@@ -96,13 +99,18 @@ Mit noFill() und noStroke() kann auch keine Füllfarb oder keine Kontur festgele
 
 
 
-Processing Variablen
+
+## 01.04.2022 – Grundstruktur setup & draw. Systemvariablen
+- [TP 2A](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_A/index.html)
+- [TP 2B](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_B/index.html)
+
+
+### Processing Variablen
 
 Processing bietet mehrere Variablen die von Processing vordefiniert sind.
 Diese könne einfach als Platzhalter im Skript eingesetzt werden und werden während der Laufzeit 
 des Programmes mit den aktuellen Werten ersetzt.
 
-mousePressed -> aktueller Zustand der Maustaste: Pressed oder nicht gedrückt -> true / false   (Boolean)
 mouseX -> Maus x - Position innerhalb vom Sketch  Zahlenwert Ganzzahlen (Integer)
 mouseY -> Maus y - Position innerhalb vom Sketch  Zahlenwert Ganzzahlen (Integer)
 width ->  Sketchbreite Zahlenwert Ganzzahlen (Integer)
@@ -110,24 +118,68 @@ height -> Sketchhöhe Zahlenwert Ganzzahlen (Integer)
 
 width und height sollten verwendet werden, um Positionen von graphischen Elementen in der Anwendung unabhängig von der Fenstergröße zu berechnen.
 
-Folgender „Pacman“ wird immer in der Mitte vom Sketch gezeichnet.
-Die x-Position ist die Hälfte der Sketch-Breite.
-Die y-Position ist die Hälfte der Sketch-Höhe.
-
-```
-arc(width/2, height * 0.5, 300, 300, radians(45), radians(360-45), PIE);
-```
 
 
 
 
-01.04.2022 – Grundstruktur setup & draw. Systemvariablen
-- [TP 2A](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_A/index.html)
-- [TP 2B](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_B/index.html)
-
-22.04.2022 – Variablentypen & if-Bedingungen
+## 22.04.2022 – Variablentypen & if-Bedingungen
 - [TP 3A](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_A/index.html)
 - [TP 3B](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_B/index.html)
+
+
+### Variablentypen
+
+***elementaren Variablen***
+- Ganzzahlen Integers int --> 1, 3, 34, -23
+- Fließkommazahlen FloatingPointNumbers float --> 0.234, 123.234, 1.0, -234.234
+- Boolean bool --> true / false
+- Character char --> 'a', 'b', ' ', '+', '\'' (escapen von sonderzeichen über \Sonderzeichen)
+
+***Objekte***
+- Textkette String --> "Hello World", " ", "8ohasdf"
+- PImage Bilder
+- PFont Schriften
+
+Variablen Definition in den meisten Programmiersprachen
+```
+// Typ variablenNamen ( = Wert);
+int alter = 18;
+```
+
+Variabeln Definition in p5js
+```
+let myXPos = 40.0;
+let myYPos = 60;
+let xSpeed, ySpeed;
+```
+
+if-Bedingungen 
+Mit if-Bedinungen lassen sich ein Programm steuern. 
+Über Bedingungen lässt sich steuern, welche Programmteile ausgeführt werden.
+
+```
+// if-Bedingungen
+// if(CONDITION) { wenn CONDITION erfüllt ist, wird alles im Rumpf (zwischen den {}) ausgeführt}
+if(mouseX > 300){
+    ellipse(mouseX, mouseY, 50, 50);
+}
+```
+
+Um Bedingungen zu formulieren gibt es ***Vergleichsoperatoren***
+- A > B  --> wenn A größer als B ist
+- A < B  --> wenn A kleiner als B ist
+- A >= B --> wenn A größer oder gleich B ist
+- A <= B --> wenn A kleiner oder gleich B ist
+- A == B --> wenn der Wert von A gleich B ist
+- A === B --> wenn der Wert von A gleich B ist und der Typ von A und B gleich ist
+- A != B --> wenn der Wert von A nicht gleich B ist
+  
+  
+Um mehrere Bedingung miteinander zu verbinden gibt es ***Verknüpfungsoperatoren***
+- CONDITION_A && CONDITION_B --> Wenn Bedingung A UND Bedingung B erfüllt sind
+- CONDITION_A || CONDITION_B --> Wenn Bedingung A ODER Bedingung B (oder beide) erfüllt sind
+  
+  
 
 
 ### Markdown
