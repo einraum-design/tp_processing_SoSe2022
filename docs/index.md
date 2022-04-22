@@ -7,8 +7,8 @@ You can use the [editor on GitHub](https://github.com/einraum-design/tp_processi
 
 
 ## 25.03.2022 – Einfache Formen und Farben
-- [TP 1A](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_A/index.html)
-- [TP 1B](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_B/index.html)
+- [TP 1A](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_A/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP1_A/sketch.js)
+- [TP 1B](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_B/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP1_B/sketch.js)
 
 ### Kommentare  
 werden vom Compiler ignoriert:
@@ -101,8 +101,8 @@ Mit noFill() und noStroke() kann auch keine Füllfarb oder keine Kontur festgele
 
 
 ## 01.04.2022 – Grundstruktur setup & draw. Systemvariablen
-- [TP 2A](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_A/index.html)
-- [TP 2B](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_B/index.html)
+- [TP 2A](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_A/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP2_A/sketch.js)
+- [TP 2B](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_B/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP2_B/sketch.js)
 
 
 ### Processing Variablen
@@ -123,8 +123,8 @@ width und height sollten verwendet werden, um Positionen von graphischen Element
 
 
 ## 22.04.2022 – Variablentypen & if-Bedingungen
-- [TP 3A](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_A/index.html)
-- [TP 3B](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_B/index.html)
+- [TP 3A](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_A/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP3_A/sketch.js)
+- [TP 3B](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_B/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP3_B/sketch.js)
 
 
 ### Variablentypen
