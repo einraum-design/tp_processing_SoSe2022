@@ -1,27 +1,43 @@
-// Processing eigene Variablen
-// mouseX -> Ganzzahl - xPosition der Maus innerhalb vom Canvas
-// mouseY -> Ganzzahl - yPosition der Maus innerhalb vom Canvas
-// width  -> Ganzzahl - Breite vom Canvas Element (wird bei createCanvas gesetzt)
-// height -> Ganzzahl - Höhe vom Canvas Element (wird bei createCanvas gesetzt)
-
 // Wird beim Programmstart einmal ausgeführt
 // Daten geladen: Bilder, Schriften, ...
 // Canvas erstellen, weiter HTML Elemente erstellen
 function setup() {
- createCanvas(400, 400);
+  createCanvas(400, 600);
+} 
 
- //
-}
+//Processing Variable
+//mouseX -> eine Zahl - xKoordinate innerhalb des Canvas Elements
+//mouseY -> eine Zahl - yKoordinate innerhalb des Canvas Elements
+//width -> Zahl - Breite von unserem Canvas Element (durch creatCanvas festgelegt)
+//heigth -> Zahl - Höhe von unserem Canvas Element (durch creatCanvas festgelegt)
+// frameCount -> Ganzzahl zählt ab Programmstart jeden Frame um 1 hoch
 
-// Wird, nachdem die function setup zuende ist 
-// immer wieder (60 x pro Sekunde) ausgeführt.
+// Grundrechenarten können überall eingestezt werden
+//+ - * / (%Moduls)
+
+//Random Funktion
+//random(MAX) --> zufällige Zahl 0 -Max
+//random(MIN, MAX) --> zugällige Zahl MIN - MAX
+
+
+//Wird nach der function setup ausgeführt
+//wird immer wieder ausgeführt (normalerweise 60 x pro Sekunde)
 function draw() {
- background(220);
-
- // red, green, blue, alphatransparenz -> 0 - 255
- fill(mouseX, 0, 0, mouseY);
- ellipse(mouseX, mouseY, 100, 100);
-
-
-
+  background(0, 220, 0);
+  fill(255, 0, 0, mouseY);
+  ellipse(mouseX, mouseY, mouseX, 100, 100);
+  fill(255, 255, 0, mouseY);
+  ellipse(mouseX, mouseY, 100, mouseY);
+  rectMode(CORNER);
+  fill(255, 255, 0, frameCount);
+  rect(0, height - 50, width, 50);
+  fill(0, 255, 255);
+  //x-Pos, y-pos, briete, hoehe
+  rect(width - 100, 0, 100, height - 50);
+  //rectMode(CENTER)
+  //rect(width,/2,height/2, 30, 30)
+  rectMode(CENTER);
+  fill(255, 255, 255);
+  fill(random(255), 100, 100);
+  rect(width / 2, height / 2, 30, random(30, 100));
 }

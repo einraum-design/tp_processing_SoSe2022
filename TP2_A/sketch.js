@@ -1,53 +1,43 @@
+// Wird beim Programmstart einmal ausgeführt
+// Daten geladen: Bilder, Schriften, ...
+// Canvas erstellen, weiter HTML Elemente erstellen
 function setup() {
-  
-  // erstellt Leinwand in den Massen 600px breit, 400 px hoch
-  
-  /* ich
-    bin
-    ein
-    mehrzeiliger 
-    Kommentar
-  */
-  
-  createCanvas(600, 400);
-  background(200);
-  
-   // Fuellfarbe 3 Parameter rot, gruen, blau --> 0 - 255
-  fill(255, 150, 0);
-  
-  // rectMode(CENTER oder CORNER)
-  // rect(XPOS, YPOS, BREITE, HOEHE)
-  rect(100, 150, 100, 120);
-  
-  // Fuellfarbe 4 Parameter rot, gruen, blau, alpha --> 0 - 255
-  fill(255, 0, 0, 100);
-  
-  ellipse(100, 150, 100, 120);
-  
-  
- 
-  // Fuellfarbe 1 Parameter grauwert--> 0 - 255
-  fill(0);
-  
-  // Fuellfarbe 2 Parameter grauwert, alpha --> 0 - 255
-  fill(0, 90);
-  noStroke();
-  // setze den Positionsreferenzpunkt: CENTER, CORNER, CORNERS
-  ellipseMode(CORNER);
-  ellipse(100, 150, 100, 120);
-  
-  // keine Fuellfarbe
-  noFill();
-  
-  // Konturfarbe
-  stroke(0,0,255);
-  
-  // Konturstaerke
-  strokeWeight(6);
-  rect(400, 100, 200, 50)
-  
-  
-  fill(255);
-  arc(450, 250, 100, 100, radians(220), radians(120), PIE);
-  
+  createCanvas(400, 600);
+} 
+
+//Processing Variable
+//mouseX -> eine Zahl - xKoordinate innerhalb des Canvas Elements
+//mouseY -> eine Zahl - yKoordinate innerhalb des Canvas Elements
+//width -> Zahl - Breite von unserem Canvas Element (durch creatCanvas festgelegt)
+//heigth -> Zahl - Höhe von unserem Canvas Element (durch creatCanvas festgelegt)
+// frameCount -> Ganzzahl zählt ab Programmstart jeden Frame um 1 hoch
+
+// Grundrechenarten können überall eingestezt werden
+//+ - * / (%Moduls)
+
+//Random Funktion
+//random(MAX) --> zufällige Zahl 0 -Max
+//random(MIN, MAX) --> zugällige Zahl MIN - MAX
+
+
+//Wird nach der function setup ausgeführt
+//wird immer wieder ausgeführt (normalerweise 60 x pro Sekunde)
+function draw() {
+  background(0, 220, 0);
+  fill(255, 0, 0, mouseY);
+  ellipse(mouseX, mouseY, mouseX, 100, 100);
+  fill(255, 255, 0, mouseY);
+  ellipse(mouseX, mouseY, 100, mouseY);
+  rectMode(CORNER);
+  fill(255, 255, 0, frameCount);
+  rect(0, height - 50, width, 50);
+  fill(0, 255, 255);
+  //x-Pos, y-pos, briete, hoehe
+  rect(width - 100, 0, 100, height - 50);
+  //rectMode(CENTER)
+  //rect(width,/2,height/2, 30, 30)
+  rectMode(CENTER);
+  fill(255, 255, 255);
+  fill(random(255), 100, 100);
+  rect(width / 2, height / 2, 30, random(30, 100));
 }
