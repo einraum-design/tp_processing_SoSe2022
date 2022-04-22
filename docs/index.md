@@ -8,7 +8,7 @@ You can use the [editor on GitHub](https://github.com/einraum-design/tp_processi
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### TP
-[TP 1A](https://github.com/einraum-design/tp_processing_SoSe2022/TP1_A/index.html)
+[TP 1A](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_A/index.html)
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
