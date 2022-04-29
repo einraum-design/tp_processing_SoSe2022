@@ -1,14 +1,10 @@
 # tp_processing_SoSe2022
 Kursmaterial TP Processing (p5js) Sommersemester 2022
-
-## Kursdokumentation TP Processing FH|W–S FB Gestaltung  
-
-You can use the [editor on GitHub](https://github.com/einraum-design/tp_processing_SoSe2022/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
+Kursdokumentation TP Processing FH|W–S FB Gestaltung  
 
 ## 25.03.2022 – Einfache Formen und Farben
-- [TP 1A](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_A/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP1_A/sketch.js)
-- [TP 1B](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_B/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP1_B/sketch.js)
+- [TP 1A](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP1_A/sketch.js)
+- [TP 1B](https://einraum-design.github.io/tp_processing_SoSe2022/TP1_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP1_B/sketch.js)
 
 ### Kommentare  
 werden vom Compiler ignoriert:
@@ -101,8 +97,8 @@ Mit noFill() und noStroke() kann auch keine Füllfarb oder keine Kontur festgele
 
 
 ## 01.04.2022 – Grundstruktur setup & draw. Systemvariablen
-- [TP 2A](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_A/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP2_A/sketch.js)
-- [TP 2B](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_B/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP2_B/sketch.js)
+- [TP 2A](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP2_A/sketch.js)
+- [TP 2B](https://einraum-design.github.io/tp_processing_SoSe2022/TP2_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP2_B/sketch.js)
 
 
 ### Processing Variablen
@@ -123,8 +119,8 @@ width und height sollten verwendet werden, um Positionen von graphischen Element
 
 
 ## 22.04.2022 – Variablentypen & if-Bedingungen
-- [TP 3A](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_A/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP3_A/sketch.js)
-- [TP 3B](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_B/index.html) [Code](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP3_B/sketch.js)
+- [TP 3A](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP3_A/sketch.js)
+- [TP 3B](https://einraum-design.github.io/tp_processing_SoSe2022/TP3_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP3_B/sketch.js)
 
 
 ### Variablentypen
@@ -180,6 +176,52 @@ Um mehrere Bedingung miteinander zu verbinden gibt es ***Verknüpfungsoperatoren
 - CONDITION_A || CONDITION_B --> Wenn Bedingung A ODER Bedingung B (oder beide) erfüllt sind
   
   
+## 29.04.2022 – if-else Bedingungen, Buttons, Eventlistener
+- [TP 4A](https://einraum-design.github.io/tp_processing_SoSe2022/TP4_1_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_1_A/sketch.js)
+(https://einraum-design.github.io/tp_processing_SoSe2022/TP4_2_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_2_A/sketch.js)
+- [TP 4B](https://einraum-design.github.io/tp_processing_SoSe2022/TP4_1_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_1_B/sketch.js)
+(https://einraum-design.github.io/tp_processing_SoSe2022/TP4_2_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_2_B/sketch.js)
+
+
+„Schaltflächen" innerhalb des Canvas Elements lassen sich in p5js auf die Weise erstellen, dass abgefragt wird, ob der Cursor über der Position der definierten Fläche ist.
+
+Bei rechteckigen Buttons lässt sich von allen vier Seiten abfragen, 
+Ob die Maus-X-Position größer als die linke Seite und kleiner als die rechte Kantenposition des Rechtecks ist. Analog dazu Ober- und Unterkante des Rechtecks.
+
+```
+if (mouseX >= xButton && 
+    mouseX <= xButton + wButton && 
+    mouseY >= yButton && 
+    mouseY <= yButton + hButton) {
+        // Maus ist über dem Rechteck
+}
+```
+
+Bei einem Kreis kann man einfach den Abstand des Cursors zum Mittelpunkt des Kreises berechnen und daran den Status festlegen.
+
+```
+// mit der dist() funktion den Abstand 
+// zwischen Mauskoordinaten und Button Mittelpunkt berechnen:
+float cursorToEllipseCente = dist(mouseX, mouseY, xCircleButton, yCircleButton);
+
+if (cursorToEllipseCente < diameterCircleButton/2) {
+    // Maus ist über dem Kreis
+}
+```
+
+Ein „hover“ Effekt für die Schaltflächen lässt sich erstellen, indem in der function draw – also in jedem Frame – abgefragt wird ob die Maus über der Fläche ist und die Darstellung damit verändert wird. 
+
+
+Soll sich der Status des Buttons auf ein Event (zB. Click) hin umschalten, muss beachtet werden, dass der Wechsel nicht innerhalb der void draw mehrfach ausgeführt wird.
+Deshalb gibt es Event Händler, die auf bestimmte Events hin jeweils einmal ausgeführt werden. Diese stehen außerhalb der function setup() und der function draw().
+```
+// wird in dem Moment aufgerufen, wenn die Maustaste gedrückt wird.
+void mousePressed() {
+    // der Inhalt im Funktionsrumpf wird pro Click einmal ausgeführt.
+}
+```
+
+Weiter Eventhandler für Maus- und TastaturEvents sind in der Referenz zu finden.
 
 
 ### Markdown
