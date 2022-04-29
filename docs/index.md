@@ -177,10 +177,10 @@ Um mehrere Bedingung miteinander zu verbinden gibt es ***Verknüpfungsoperatoren
   
   
 ## 29.04.2022 – if-else Bedingungen, Buttons, Eventlistener
-- [TP 4A](https://einraum-design.github.io/tp_processing_SoSe2022/TP4_1_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_1_A/sketch.js)
-(https://einraum-design.github.io/tp_processing_SoSe2022/TP4_2_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_2_A/sketch.js)
-- [TP 4B](https://einraum-design.github.io/tp_processing_SoSe2022/TP4_1_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_1_B/sketch.js)
-(https://einraum-design.github.io/tp_processing_SoSe2022/TP4_2_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_2_B/sketch.js)
+- [TP 4_1 A](https://einraum-design.github.io/tp_processing_SoSe2022/TP4_1_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_1_A/sketch.js)
+[TP 4_2 A](https://einraum-design.github.io/tp_processing_SoSe2022/TP4_2_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_2_A/sketch.js)
+- [TP 4_1 B](https://einraum-design.github.io/tp_processing_SoSe2022/TP4_1_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_1_B/sketch.js)
+[TP 4_1 B](https://einraum-design.github.io/tp_processing_SoSe2022/TP4_2_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP4_2_B/sketch.js)
 
 
 „Schaltflächen" innerhalb des Canvas Elements lassen sich in p5js auf die Weise erstellen, dass abgefragt wird, ob der Cursor über der Position der definierten Fläche ist.
