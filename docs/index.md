@@ -224,6 +224,48 @@ void mousePressed() {
 Weiter Eventhandler für Maus- und TastaturEvents sind in der Referenz zu finden.
 
 
+## 13.05.2022 – html, css und die Ordnerstruktur
+- [TP Block A](https://einraum-design.github.io/tp_processing_SoSe2022/TP_Block1_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP_Block1_A/sketch.js)
+- [TP Block B](https://einraum-design.github.io/tp_processing_SoSe2022/TP_Block1_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP_Block1_B/sketch.js)
+
+
+
+## 13.05.2022 – Transformationen
+- [TP 5_1 A](https://einraum-design.github.io/tp_processing_SoSe2022/TP5_1_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP5_1_A/sketch.js)
+[TP 5_2 A](https://einraum-design.github.io/tp_processing_SoSe2022/TP5_2_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP5_2_A/sketch.js)
+- [TP 5_1 B](https://einraum-design.github.io/tp_processing_SoSe2022/TP5_1_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP5_1_B/sketch.js)
+[TP 5_2 B](https://einraum-design.github.io/tp_processing_SoSe2022/TP5_2_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP5_2_B/sketch.js)
+
+Um Zeichenelemente im Processing Sketch zu bewegen, gibt es einige Transformations Tools.
+
+Transformationen werden immer vom Nullpunkt des Koordinatensystems ausgeführt.
+Zu Beginn der void draw ist das Koordinatensystem immer in der linken oberen Ecke.
+Wird ein rotate(float Winkel) Befehl ausgeführt wird also alles um diese Ecke rotiert. 
+
+Um um einen anderen Mittelpunkt rotieren zu können, muss zuerst das Zeichenkoordinatensystem 
+an den gewünschten Mittelpunkt verschoben werden.
+Die geschieht über den translate(float x, float y) Befehl. Translate kann das Zeichenkoordinatensystem
+in x und y Richtung verschieben.
+
+Als drittes Transformationstool gibt es den scale(float x, float y) Befehl. 
+Dieser Skaliert das Koordinatensystem. Scale funktioniert mit positiven wie auch negativen Werten. Damit lassen sich Inhalte auch spiegeln. 
+
+Es können beliebig viele Transformationen hintereinander ausgeführt werden. 
+Jede Verschiebung und Rotation wird aber auf die vorherigen aufaddiert!
+Wenn das Koordinatensystem mit rotate() verdreht wurde und anschließend wieder 
+ein translate ausgeführt wird, wird das Koordinatensystem in die rotierte Richtung verschoben.
+
+Bei jedem Neustart der void draw() wird das Koordinatensystem wieder auf das Standart Koordinatensystem zurück gesetzt.
+
+Das Zeichenkoordiantensystem lässt sich innerhalb der void draw wieder auf Standartposition, Rotation und Skalierung zurücksetzen:
+
+```
+ resetMatrix();
+```
+
+
+
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for

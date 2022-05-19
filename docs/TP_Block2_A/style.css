@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+
+h1, h2, h3 {
+  color: rgb(61, 165, 199);
+}
+
+#myP5JSApp {
+  border: 1px solid #000;
+  margin: 20px;
+  padding: 10px;
+}
