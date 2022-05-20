@@ -264,6 +264,11 @@ Das Zeichenkoordiantensystem lässt sich innerhalb der void draw wieder auf Stan
 ```
 
 
+## 20.05.2022 – Arrays & Objekte
+- [TP 6A](https://einraum-design.github.io/tp_processing_SoSe2022/TP6_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP6_A/sketch.js)
+- [TP 6B](https://einraum-design.github.io/tp_processing_SoSe2022/TP6_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP6_B/sketch.js)
+
+
 
 
 ### Markdown
