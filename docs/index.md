@@ -270,6 +270,8 @@ Das Zeichenkoordiantensystem lässt sich innerhalb der void draw wieder auf Stan
 
 
 Um mehrere Werte in nur einem Variablenname speichern zu können gibt es unterschiedlich Konstrukte. 
+
+### Arrays
 Es gibt Array, bei denen jeder Wert über einen Index (Zahl von 0 - n) als Schlüssel angesprochen werden kann.
 Arrays werden über eckige Klammern gekennzeichnet:
 
@@ -280,7 +282,10 @@ Der Zugriff auf die Werte erfolg über die den Index in den eckigen Klammern:
 ```
  let myArray[0] = "hello"; // wert "hello" an der Stelle 0 im Array
 ```
+Bei Arrays kann man über das Attribut "length" abrufen, wie viele Werte in dem Array aktuell enthalten sind.
+Mit der Methode .push() lassen sich neue Werte an das Array hinten anhängen.
 
+### Objekte
 Objekte sind noch etwas allgemeiner gefasst. Hier sind die Schlüssel, um auf die einzelnen Werte von dem Objekt zugreifen zu können nicht festgelegt auf durchnummerierte Zahlen, sondern können jeder Begriff sein.
 Objekt werden über die geschweiften Klammern definiert:
 
