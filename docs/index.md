@@ -269,26 +269,30 @@ Das Zeichenkoordiantensystem lässt sich innerhalb der void draw wieder auf Stan
 - [TP 6B](https://einraum-design.github.io/tp_processing_SoSe2022/TP6_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP6_B/sketch.js)
 
 
+Um mehrere Werte in nur einem Variablenname speichern zu können gibt es unterschiedlich Konstrukte. 
+Es gibt Array, bei denen jeder Wert über einen Index (Zahl von 0 - n) als Schlüssel angesprochen werden kann.
+Arrays werden über eckige Klammern gekennzeichnet:
 
+```
+ let myArray = [];
+```
+Der Zugriff auf die Werte erfolg über die den Index in den eckigen Klammern:
+```
+ let myArray[0] = "hello"; // wert "hello" an der Stelle 0 im Array
+```
 
-### Markdown
+Objekte sind noch etwas allgemeiner gefasst. Hier sind die Schlüssel, um auf die einzelnen Werte von dem Objekt zugreifen zu können nicht festgelegt auf durchnummerierte Zahlen, sondern können jeder Begriff sein.
+Objekt werden über die geschweiften Klammern definiert:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```
+ let myObject = {};
+```
+Schlüssel - Wert - Paare lassen sich einfach über den Punkt-Operator hinzufügen:
+```
+ let myObject = {}
+ myObject.name = "Otto";
+ myObject.alter = 43;
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+ // oder über den Schlüssel als String ("") in eckigen Klammern hinzufügen:
+ myObject["sex"] = "male";
 ```
