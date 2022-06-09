@@ -320,7 +320,7 @@ Die Bedingung wird überprüft - wenn die Bedingung true ist, wird der Schleifen
 Anschließend wird die Bedingung erneut überprüft und der Schleifenrumpf erneut ausgeführt etc.
 Ist die Bedingung nicht erfüllt, wird die Wiederholung unterbrochen und das Programm nach der Schleife fortgesetzt.
 
-## FOR-LOOP
+### FOR-LOOP
 Die for Schleife funktioniert sehr ähnlich der while Schleife.
 Als Parameter werden jedoch 3 Teile (statt nur der Bedingung) erwartet.
 
@@ -336,3 +336,45 @@ Als Parameter werden jedoch 3 Teile (statt nur der Bedingung) erwartet.
     ellipse(0, random(-100, 100), 10, 10);
   }
 ```
+
+## 4.06.2022 – functions
+- [TP 8A](https://einraum-design.github.io/tp_processing_SoSe2022/TP8_A/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP8_A/sketch.js)
+- [TP 8B](https://einraum-design.github.io/tp_processing_SoSe2022/TP8_B/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2022/blob/main/docs/TP8_B/sketch.js)
+
+Processing bietet einige vordefinierte Funktionen, wie zb. die ellipse(), map(), fill() … Funktionen.
+Wir können jedoch auch beliebig eigene Funktionen definieren.
+
+Eine eigene Funktion besteht aus vier Teilen:
+Deklaration "function" 
+
+Funktionsname
+- beginnt mit einem Kleinbuchstaben
+- ein Wort! (Keine Leerzeichen/Kommas/Punkte)
+
+Klammern (optional Paramater …) 
+
+```
+function myFunction (parameter1, parameter2){
+    // optional Rückgabewert
+    return result;
+
+}
+```
+
+Es lassen sich auch optionale Parameter in der Funktion definieren:
+```
+function myFunction (parameter1 = 100){
+    ...
+}
+```
+Wenn ein Parameter beim Funktionsaufruf mitgegeben wird, wird dieser als parameter1 gesetzt. Ansonsten wird der Standartwert 100 genutzt.
+
+
+Es lassen sich zwei Funktionstypen unterscheiden: 
+
+- Funktionen ohne Rückgabetyp:
+Bei Funktionsaufruf wird alles was im Rumpf steht einfach ausgeführt und danach kehrt das Programme wieder an die Stelle, an der die Funktion aufgerufen wurde zurück und führt die nächsten Befehle aus ...
+
+- Funktionen mit Rückgabetyp
+Am Ende des Funktionsaufrufs muss ein ein „return" mit dem Rückgabewert stehen. 
+die random() Funktion liefert zB. ein Fließkommerzahl zurück ...
